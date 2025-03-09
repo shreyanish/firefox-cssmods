@@ -1,0 +1,19 @@
+.tab-group-label {
+  tab-group[collapsed] > .tab-group-label-container > & {
+    background-color: var(--tab-group-color-invert) !important;
+    color: var(--tab-group-color-pale);
+    outline: none !important;
+    outline-offset: 0px !important;
+  }
+}
+
+.tab-group-label {
+    color: var(--tab-group-color-pale) !important;
+    background-color: var(--tab-group-color-invert);
+}
+
+#tabbrowser-tabs {
+    &[orient="horizontal"] {
+      --tab-overflow-pinned-tabs-width: 8px !important;
+    }
+}
